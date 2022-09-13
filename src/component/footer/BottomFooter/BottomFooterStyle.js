@@ -4,8 +4,13 @@ export const Main = styled.div`
   width: 100%;
   height: 128px;
   position: relative;
-  top: 427px;
+  top: 412px;
   background: #11377c;
+  @media screen and (max-width: 370px) {
+    top: 289em;
+    /* width: 360px; */
+    height: 189.18px;
+  }
 `;
 
 export const Footer = styled.div`
@@ -13,8 +18,12 @@ export const Footer = styled.div`
   flex-direction: row;
   align-items: flex-start;
   padding: 32px 158px;
-
   box-sizing: border-box;
+  @media screen and (max-width: 370px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap:24px;
+  }
 `;
 export const LeftDiv = styled.div`
   display: flex;
@@ -27,6 +36,18 @@ export const LeftDiv = styled.div`
   #copy {
     width: 305px;
     color: #bbc1cb;
+    word-spacing: 0px;
+  }
+  span {
+    word-spacing: 0px;
+  }
+  @media screen and (max-width: 370px) {
+    width: 312px;
+    height: 56px;
+    margin-left: 8px;
+    span{
+      display: none;;
+    }
   }
 `;
 
@@ -40,6 +61,7 @@ export const Text = styled.p`
   font-size: 16px;
   line-height: 150%;
   color: #ffffff;
+  word-spacing: 8px;
 `;
 
 export const RightDiv = styled.div`
@@ -51,6 +73,13 @@ export const RightDiv = styled.div`
   gap: 24px;
   width: 562px;
   height: 64px;
+  margin-left: 34%;
+  @media screen and (max-width: 370px) {
+    align-items: center;
+    gap: 24px;
+    width: 312px;
+    height: 45.18px;
+  }
   img {
     width: 143.26px;
     height: 48px;
@@ -65,4 +94,14 @@ export const Logo = styled.div`
   height: 64px;
   background: #ffffff;
   border-radius: 8px;
+  @media screen and (max-width: 370px) {
+    width: 144px;
+    height: 45.18px;
+    img {
+      width: 123.3px;
+      height: 22.59px;
+      left: 10.59px;
+      top: 11.29px;
+    }
+  }
 `;

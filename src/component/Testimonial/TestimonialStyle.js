@@ -1,18 +1,29 @@
 import styled from "styled-components";
 import Background from "../assets/Testimonials/background.png";
-export const MainDiv=styled.div`
-height: 812px;
-width: 100%;
-position:relative;
-top: 427px;
+import MobileBackground from "../assets/Testimonials/Skew.png";
+
+export const MainDiv = styled.div`
+  height: 706px;
+  width: 100%;
+  position: relative;
+  top: 427px;
+  @media screen and (max-width: 370px) {
+    position: absolute;
+    width: 349px;
+    top: 310rem;
+    background: #f9de89;
+  }
 `;
 export const Container = styled.div`
   width: 100%;
   height: 668px;
   background: url(${Background});
-  margin: 73px 0px;
-  position:absolute;
-  top:1px;
+  position: absolute;
+  top: 1px;
+  @media screen and (max-width: 370px) {
+    background: url(${MobileBackground});
+    height: auto;
+  }
 `;
 export const Wraper = styled.div`
   display: flex;
@@ -23,20 +34,32 @@ export const Wraper = styled.div`
   position: absolute;
   width: 984px;
   height: 468px;
-  left: 228px;
+  left: 13%;
   top: calc(50% - 468px / 2 + 0.33px);
+  @media screen and (max-width: 370px) {
+    top: 92px;
+    left: 24px;
+    width: 312px;
+  }
 `;
 
 export const Heading = styled.p`
   width: 909px;
   padding: 0px;
   height: 60px;
-  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
   margin: 0px 0px 24px 0px;
+
+  @media screen and (max-width: 370px) {
+    width: 312px;
+    height: 144px;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0px;
+  }
 `;
 
 export const CardRow = styled.div`
@@ -47,6 +70,14 @@ export const CardRow = styled.div`
   gap: 24px;
   width: 984px;
   height: 384px;
+  @media screen and (max-width: 370px) {
+    width: 312px;
+    height: 384px;
+    #card2,
+    #card3 {
+      display: none;
+    }
+  }
 `;
 
 export const Card = styled.div`
@@ -59,6 +90,14 @@ export const Card = styled.div`
   background: #ffffff;
   border: 1px solid #eff1f3;
   border-radius: 12px;
+  @media screen and (max-width: 370px) {
+    padding: 24px;
+    margin: 0px;
+    gap: 24px;
+    width: 312px;
+    height: 384px;
+    box-sizing: border-box;
+  }
 `;
 export const CardData = styled.p`
   width: 264px;
@@ -71,6 +110,11 @@ export const CardData = styled.p`
   margin: 24px;
   margin-bottom: 0px;
   box-sizing: border-box;
+  @media screen and (max-width: 370px) {
+    width: 264px;
+    height: 192px;
+    margin: 0px;
+  }
 `;
 
 export const Details = styled.div`
@@ -88,6 +132,9 @@ export const Details = styled.div`
     left: 108px;
     top: 0px;
     border-radius: 0px;
+  }
+  @media screen {
+    margin: 0px;
   }
 `;
 export const Name = styled.div`
@@ -112,4 +159,29 @@ export const Address = styled.div`
   /* identical to box height, or 150% */
 
   text-align: center;
+`;
+export const Changer = styled.div`
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 72px;
+  height: 24px;
+  position: absolute;
+  bottom: -26%;
+  right: 22px;
+  button {
+    border: none;
+    background-color: #f9de89;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    :nth-child(2) {
+      color: white;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    display: flex;
+  }
 `;

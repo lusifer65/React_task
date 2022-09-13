@@ -4,19 +4,28 @@ export const CombineFooter = styled.div``;
 
 export const TOP_FOOTER = styled.div`
   width: 100%;
-  height: 585px;
-  position:relative;
-  top:427px;
+  height: 93vh;
+  position: relative;
+  top: 427px;
+  @media screen and (max-width: 370px) {
+    top: 241em;
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px 158px 32px;
+  padding: 24px 158px;
   gap: 24px;
   box-sizing: border-box;
   background: #e9effb;
+  @media screen and (max-width: 370px) {
+    width: 342px;
+    padding: 24px 25px 32px 24px;
+    gap: 24px;
+    height: 1387px;
+  }
 `;
 export const TopBar = styled.div`
   display: flex;
@@ -25,21 +34,39 @@ export const TopBar = styled.div`
   align-items: center;
   padding: 0px;
   gap: 10px;
-  width: 1124px;
+  width: 100%;
   height: 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 134%;
-  color: #11377C;
+  color: #11377c;
+  @media screen and (max-width: 370px){
+    width:301px;
+  }
 `;
 export const ListContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 24px;
+
   width: 1124px;
   height: 481px;
+  @media screen and (max-width: 370px) {
+    flex-direction: column;
+    width: 300px;
+  }
+  #LogoCollection {
+    @media screen and (max-width: 370px) {
+      flex-direction: row;
+      align-items: center;
+      width: 288px;
+      height: 48px;
+      position: relative;
+      top:75em;
+      bottom: -1px;
+    }
+  }
 `;
 
 export const Section = styled.section`
@@ -50,6 +77,10 @@ export const Section = styled.section`
   gap: 24px;
   width: 263px;
   color: #11377c;
+
+  @media screen and (max-width: 370px) {
+        padding: 0px;;
+    }
 `;
 
 export const InnerDiv = styled.ul`
@@ -58,15 +89,17 @@ export const InnerDiv = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  list-style:none;
-  margin:0px;
-  #address{
-    width:156px;
+  list-style: none;
+  margin: 0px;
+  #address {
+    width: 156px;
   }
-  .manageWidth{
-    margin-bottom:28px;
+  .manageWidth {
+    margin-bottom: 28px;
   }
-
+  @media screen and (max-width: 370px){
+    padding: 0px;;
+  }
 `;
 
 export const Heading = styled.li`
@@ -88,7 +121,7 @@ export const ListItem = styled.li`
   color: #11377c;
   white-space: no-wrap;
 
-  .manageWidth{
-    border:1px solid red;
+  .manageWidth {
+    border: 1px solid red;
   }
 `;

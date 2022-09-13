@@ -1,17 +1,25 @@
 import styled from "styled-components";
 
-export const Main=styled.div`
-position:relative;
-top: 427px;
+export const Main = styled.div`
+  position: relative;
+  top: 427px;
+  @media screen and (max-width: 370px) {
+    top: 241em;
+  }
 `;
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px 0px 0px 228px;
+  padding: 0px 0px 0px 165px;
   width: 100%;
   height: 264px;
-  box-sizing:border-box;
+  box-sizing: border-box;
+  @media screen and (max-width: 370px) {
+    width: 349px;
+    height: 420px;
+    padding: 0px 0px 0px 24px;
+  }
 `;
 export const Box = styled.div`
   display: flex;
@@ -21,6 +29,11 @@ export const Box = styled.div`
   gap: 24px;
   width: 984px;
   height: 264px;
+  @media screen and (max-width: 370px) {
+    padding: 0px;
+    width: 312px;
+    height: 172px;
+  }
 `;
 export const TextBox = styled.div`
   display: flex;
@@ -28,9 +41,13 @@ export const TextBox = styled.div`
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
-
   width: 480px;
   height: 120px;
+  @media screen and (max-width: 360px) {
+    width: 312px;
+    height: 172px;
+    margin-top: 40px;
+  }
 `;
 export const Heading = styled.p`
   width: 480px;
@@ -41,6 +58,12 @@ export const Heading = styled.p`
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
+  @media screen and (max-width: 370px) {
+    width: 312px;
+    height: 96px;
+    font-size: 36px;
+    line-height: 48px;
+  }
 `;
 export const SubHeading = styled.p`
   width: 480px;
@@ -52,6 +75,13 @@ export const SubHeading = styled.p`
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
+  @media screen and (max-width: 370px) {
+    width: 312px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+  }
 `;
 export const InputBox = styled.div`
   display: flex;
@@ -60,14 +90,23 @@ export const InputBox = styled.div`
   padding: 0px;
   gap: 12px;
   margin: 0px;
-
   width: 480px;
   height: 112px;
+  @media screen and (max-width: 370px) {
+    width: 312px;
+    position: absolute;
+    height: 172px;
+    left: 24px;
+    bottom: 40px;
+  }
 `;
 export const InputTab = styled.div`
   width: 480px;
   height: 80px;
   margin: 0px;
+  @media screen and (max-width: 370px) {
+      width: 312px;
+    }
   input {
     box-sizing: border-box;
     background: #ffffff;
@@ -78,6 +117,10 @@ export const InputTab = styled.div`
     left: 0px;
     top: 0px;
     border-radius: 4px;
+    @media screen and (max-width: 370px) {
+      width: 312px;
+      height: 80px;
+    }
   }
   Button {
     box-sizing: border-box;
@@ -89,7 +132,7 @@ export const InputTab = styled.div`
     gap: 6px;
     position: absolute;
     width: 158px;
-    left: calc(71% - 158px / 2 + 152px);
+    left: calc(71% - 158px / 2 + 100px);
     top: 33.29%;
     margin: 5px 0px;
     background: #11377c;
@@ -97,17 +140,33 @@ export const InputTab = styled.div`
     border-radius: 4px;
     color: white;
     text-transform: uppercase;
+    :hover {
+      background: rgba(13, 44, 98, 1);
+    }
+    @media screen and (max-width: 370px) {
+      width: 312px;
+      left: 1px;
+      top: 86px;
+      height: 48px;
+    }
   }
-  input::placeholder {
-    position: absolute;
-    width: 45px;
-    height: 24px;
-    left: 24px;
-    top: 24px;
+  input {
     font-weight: 400;
     font-size: 18px;
     line-height: 134%;
-    color: #7d899c;
+    padding-left: 22px;
+    ::placeholder {
+      position: absolute;
+      width: 45px;
+      height: 24px;
+      left: 24px;
+      top: 28px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 134%;
+      color: #7d899c;
+    }
+    
   }
 `;
 export const Subtitle = styled.div`
@@ -121,5 +180,15 @@ export const Subtitle = styled.div`
     font-size: 18px;
     line-height: 24px;
     margin-left: 5px;
+    :hover {
+      box-shadow: inset 0px -5px 1px #80cfbd;
+      cursor: pointer;
+      color: rgba(13, 44, 98, 1);
+    }
+  }
+  @media screen and (max-width: 370px) {
+    position: relative;
+    bottom: -56px;
+    left: 4px;
   }
 `;

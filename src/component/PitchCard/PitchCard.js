@@ -28,7 +28,7 @@ const PitchCard = () => {
         <Subtitle>
           Instead of juggling the stress of tenant rental applications and
           tenant screening, use Avail to request and review tenant applications
-          online. It’s never been easier{" "}
+          online. It’s never been easier
           <strong>to find and keep quality tenants.</strong>
         </Subtitle>
         <TextLink>Find the right tenants</TextLink>
@@ -75,11 +75,11 @@ const PitchCard = () => {
           midnight phone calls.
         </Subtitle>
         <TextLink>Discover peace of mind</TextLink>
-      </Card>
+      </Card> 
       </Frame>
       <Frame id="midile">
       <Card >
-        <img src={img7} alt="img" />
+        <img src={img7} alt="img"  style={{margin:"5px 100px",}}/>
         <Heading>Resident Portal</Heading>
         <Subtitle>
           Renting should be easy for your tenants too. With Avail, your tenants

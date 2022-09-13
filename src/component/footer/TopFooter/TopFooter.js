@@ -23,7 +23,7 @@ const TopFooter = () => {
       <Container>
         <TopBar>To Top ^</TopBar>
         <ListContainer>
-          <Section>
+          <Section id="LogoCollection">
             <img src={logo1} alt="avail" />
             <img src={logo2} alt="Facebook" />
             <img src={logo3} alt="Twitter" />

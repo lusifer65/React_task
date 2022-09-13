@@ -1,11 +1,10 @@
 import React from "react";
 import { Banner, Wapper, Content, Heading, Subtitle, Button } from "./Style";
-import "../../style.css";
 import CardImg from "../assets/banner/card.svg";
 import BackgroundImg from "../assets/banner/background.png";
-const BannerComponent = () => {
+const BannerComponent = () => { 
   return (
-    <Banner img={BackgroundImg}>
+    <Banner img={BackgroundImg}>  
       <Wapper>
         <Content>
           <Heading>Manage Your Rental Property With Ease</Heading>

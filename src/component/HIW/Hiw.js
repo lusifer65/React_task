@@ -19,7 +19,7 @@ const Hiw = () => {
         </div>
         <img src={img1} alt="img" />
       </Item>
-      <img src={Rect1} className="divider" alt="divider"/>
+      <img src={Rect1} className="divider divider1" alt="divider"/>
       <Item  color="white">
         <img src={img2} alt="img" />
         <div>
@@ -29,7 +29,7 @@ const Hiw = () => {
           </Subtitle>
         </div>
       </Item>
-      <img src={Rect2} className="divider" alt="divider"/>
+      <img src={Rect2} className="divider divider2" alt="divider"/>
 
       <Item Height={"432"}>
         <div>

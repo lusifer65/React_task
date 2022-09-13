@@ -8,7 +8,7 @@ const BottomFooter = () => {
     <Main>
     <Footer>
     <LeftDiv>
-    <Text>Site Map   |   Privacy   |   Terms</Text>
+    <Text><span>Site Map |</span> Privacy | Terms</Text>
     <Text id="copy">© 2011—2021 Avail, All Rights Reserved.</Text>
     </LeftDiv>
     <RightDiv>

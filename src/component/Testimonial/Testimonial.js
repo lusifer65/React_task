@@ -10,11 +10,12 @@ import {
   Name,
   Address,
   MainDiv,
+  Changer,
 } from "./TestimonialStyle";
 import img1 from "./img/1.png";
 import img2 from "./img/2.png";
 import img3 from "./img/3.png";
-
+ 
 const Testimonial = () => {
   return (
     <MainDiv>
@@ -22,7 +23,7 @@ const Testimonial = () => {
         <Wraper>
           <Heading>See what landlords are saying about Avail</Heading>
           <CardRow>
-            <Card>
+            <Card id="card1">
               <CardData>
                 I’ve used Avail for about a year now and couldn’t be more
                 satisfied! I’m a first time landlord and Avail has really helped
@@ -35,7 +36,7 @@ const Testimonial = () => {
                 <Address>Landlord in Illinois, 1 Unit</Address>
               </Details>
             </Card>
-            <Card>
+            <Card id="card2">
               <CardData>
                 It’s affordable and easy to use. We love the advertising process
                 and online dashboard, our tenants love the free online rent
@@ -47,7 +48,7 @@ const Testimonial = () => {
                 <Address>Landlords in Colorado, 2 units</Address>
               </Details>
             </Card>
-            <Card>
+            <Card id="card3">
               <CardData>
                 This is a helpful website for new landlords like me. I was
                 totally ignorant of the entire renting process until I found
@@ -61,6 +62,10 @@ const Testimonial = () => {
               </Details>
             </Card>
           </CardRow>
+          <Changer>
+            <button>&lt;</button>
+            <button>&gt;</button>
+          </Changer>
         </Wraper>
       </Container>
     </MainDiv>
