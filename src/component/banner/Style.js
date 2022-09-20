@@ -2,7 +2,7 @@ import styled from "styled-components";
 import mobileBackground from '../assets/banner/backgroundMobile.png'
 export const Banner = styled.section`
   background: url(${(props) => props.img});
-  width: 100vw;
+  width: 100%;
   height: 780px;
   position: relative;
   box-sizing: border-box;

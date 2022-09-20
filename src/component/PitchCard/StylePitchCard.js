@@ -6,18 +6,24 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  margin: 72px auto 144px 100px;
+  margin: 72px auto auto 100px;
   gap: 24px;
-  width: 1124px;
-  height: 1044px;
+  width: 91%;
+
   #midile {
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 370px){
+    align-items: left;
+    justify-content:left;
+    height: auto;
+    
+    }
   }
   @media screen and (max-width: 370px) {
     width: 85vw;
     margin: 0px 24px;
-    height: 1044px;
+ 
     
   }
 `;
@@ -37,7 +43,7 @@ export const Frame = styled.section`
     padding: 0px;
     gap: 24px;
     width: 312px;
-    height: 2244px;
+    height: 1040px;
   }
 `;
 export const Card = styled.div`

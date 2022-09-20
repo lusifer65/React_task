@@ -2,15 +2,7 @@ import styled from "styled-components";
 
 export const Main = styled.div`
   width: 100%;
-  height: 128px;
-  position: relative;
-  top: 412px;
   background: #11377c;
-  @media screen and (max-width: 370px) {
-    top: 289em;
-    /* width: 360px; */
-    height: 189.18px;
-  }
 `;
 
 export const Footer = styled.div`
@@ -22,7 +14,7 @@ export const Footer = styled.div`
   @media screen and (max-width: 370px) {
     flex-direction: column-reverse;
     align-items: center;
-    gap:24px;
+    gap: 24px;
   }
 `;
 export const LeftDiv = styled.div`
@@ -45,8 +37,8 @@ export const LeftDiv = styled.div`
     width: 312px;
     height: 56px;
     margin-left: 8px;
-    span{
-      display: none;;
+    span {
+      display: none;
     }
   }
 `;
@@ -86,6 +78,10 @@ export const RightDiv = styled.div`
     position: relative;
     top: 8px;
     left: 30px;
+  }
+  #realtorIcon{
+    height: 32px;
+    top:16px;
   }
 `;
 

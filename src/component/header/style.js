@@ -30,7 +30,6 @@ export const Head = styled.header`
     :hover {
       width: 25px;
       height: 25px;
-      border:2px solid green;
     }
 
     @media screen and (max-width: 370px) {
@@ -68,11 +67,10 @@ export const NavData = styled.ul`
       cursor: pointer;
       color: rgba(13, 44, 90, 1);
     }
-    }
-    @media screen and (max-width: 370px){
-      display:none;
-    }
-  
+  }
+  @media screen and (max-width: 370px) {
+    display: none;
+  }
 `;
 
 export const DropDown = styled.select`

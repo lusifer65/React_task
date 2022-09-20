@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const Main = styled.div`
-  position: relative;
-  top: 427px;
-  @media screen and (max-width: 370px) {
-    top: 241em;
-  }
-`;
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,6 +11,7 @@ export const Container = styled.div`
   @media screen and (max-width: 370px) {
     width: 349px;
     height: 420px;
+    position: relative;
     padding: 0px 0px 0px 24px;
   }
 `;
@@ -105,8 +99,8 @@ export const InputTab = styled.div`
   height: 80px;
   margin: 0px;
   @media screen and (max-width: 370px) {
-      width: 312px;
-    }
+    width: 312px;
+  }
   input {
     box-sizing: border-box;
     background: #ffffff;
@@ -130,10 +124,10 @@ export const InputTab = styled.div`
     align-items: center;
     padding: 12px 24px;
     gap: 6px;
-    position: absolute;
+    position: relative;
     width: 158px;
-    left: calc(71% - 158px / 2 + 100px);
-    top: 33.29%;
+    left: calc(50% - 158px / 2 + 152px);
+    top: -85.29%;
     margin: 5px 0px;
     background: #11377c;
     border: 2px solid #11377c;
@@ -146,7 +140,7 @@ export const InputTab = styled.div`
     @media screen and (max-width: 370px) {
       width: 312px;
       left: 1px;
-      top: 86px;
+      top: 64px;
       height: 48px;
     }
   }
@@ -166,7 +160,6 @@ export const InputTab = styled.div`
       line-height: 134%;
       color: #7d899c;
     }
-    
   }
 `;
 export const Subtitle = styled.div`
@@ -188,7 +181,7 @@ export const Subtitle = styled.div`
   }
   @media screen and (max-width: 370px) {
     position: relative;
-    bottom: -56px;
+    bottom: -24px;
     left: 4px;
   }
 `;

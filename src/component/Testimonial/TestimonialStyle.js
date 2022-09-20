@@ -5,24 +5,23 @@ import MobileBackground from "../assets/Testimonials/Skew.png";
 export const MainDiv = styled.div`
   height: 706px;
   width: 100%;
-  position: relative;
-  top: 427px;
+
   @media screen and (max-width: 370px) {
-    position: absolute;
+   
     width: 349px;
-    top: 310rem;
-    background: #f9de89;
+    height: 741px;;
+  
   }
 `;
 export const Container = styled.div`
   width: 100%;
   height: 668px;
   background: url(${Background});
-  position: absolute;
+  position: relative;
   top: 1px;
   @media screen and (max-width: 370px) {
     background: url(${MobileBackground});
-    height: auto;
+    height: 741px;
   }
 `;
 export const Wraper = styled.div`
@@ -31,7 +30,7 @@ export const Wraper = styled.div`
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
-  position: absolute;
+  position: relative;
   width: 984px;
   height: 468px;
   left: 13%;
@@ -40,6 +39,13 @@ export const Wraper = styled.div`
     top: 92px;
     left: 24px;
     width: 312px;
+  }
+  #mobile{
+    display: none;
+    @media screen and (max-width: 370px) {
+      display: block;
+    }
+
   }
 `;
 
@@ -71,12 +77,10 @@ export const CardRow = styled.div`
   width: 984px;
   height: 384px;
   @media screen and (max-width: 370px) {
-    width: 312px;
-    height: 384px;
-    #card2,
-    #card3 {
-      display: none;
-    }
+    /* width: 312px;
+    height: 384px; */
+    display: none;
+    
   }
 `;
 
@@ -98,6 +102,7 @@ export const Card = styled.div`
     height: 384px;
     box-sizing: border-box;
   }
+  
 `;
 export const CardData = styled.p`
   width: 264px;
@@ -133,7 +138,7 @@ export const Details = styled.div`
     top: 0px;
     border-radius: 0px;
   }
-  @media screen {
+  @media screen and (max-width:370px){
     margin: 0px;
   }
 `;
@@ -177,9 +182,6 @@ export const Changer = styled.div`
     width: 24px;
     height: 24px;
     font-size: 24px;
-    :nth-child(2) {
-      color: white;
-    }
   }
   @media screen and (max-width: 370px) {
     display: flex;

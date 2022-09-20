@@ -1,15 +1,8 @@
 import styled from "styled-components";
 
-export const CombineFooter = styled.div``;
-
 export const TOP_FOOTER = styled.div`
   width: 100%;
-  height: 93vh;
-  position: relative;
-  top: 427px;
-  @media screen and (max-width: 370px) {
-    top: 241em;
-  }
+  cursor: pointer;
 `;
 
 export const Container = styled.div`
@@ -40,8 +33,10 @@ export const TopBar = styled.div`
   font-size: 18px;
   line-height: 134%;
   color: #11377c;
-  @media screen and (max-width: 370px){
-    width:301px;
+  @media screen and (max-width: 370px) {
+    width: 301px;
+    position: relative;
+    top:24px;
   }
 `;
 export const ListContainer = styled.div`
@@ -63,7 +58,7 @@ export const ListContainer = styled.div`
       width: 288px;
       height: 48px;
       position: relative;
-      top:75em;
+      top: 78em;
       bottom: -1px;
     }
   }
@@ -79,8 +74,8 @@ export const Section = styled.section`
   color: #11377c;
 
   @media screen and (max-width: 370px) {
-        padding: 0px;;
-    }
+    padding: 0px;
+  }
 `;
 
 export const InnerDiv = styled.ul`
@@ -97,8 +92,9 @@ export const InnerDiv = styled.ul`
   .manageWidth {
     margin-bottom: 28px;
   }
-  @media screen and (max-width: 370px){
-    padding: 0px;;
+  @media screen and (max-width: 370px) {
+    padding: 0px;
+    margin-top: 12px;
   }
 `;
 
@@ -120,8 +116,4 @@ export const ListItem = styled.li`
   line-height: 164%;
   color: #11377c;
   white-space: no-wrap;
-
-  .manageWidth {
-    border: 1px solid red;
-  }
 `;

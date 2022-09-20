@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Header from "./component/header/Header";
 import BannerComponent from "./component/banner/Banner";
 import PitchCard from "./component/PitchCard/PitchCard";
@@ -8,17 +7,18 @@ import Testimonial from "./component/Testimonial/Testimonial";
 import Email from "./component/Email/Email";
 import TopFooter from "./component/footer/TopFooter/TopFooter";
 import BottomFooter from "./component/footer/BottomFooter/BottomFooter";
+
 function App() {
   return (
     <>
       <Header />
-      <BannerComponent/>
-      <PitchCard/>
-      <Hiw/>
-      <Testimonial/>
-      <Email/>
-      <TopFooter/>
-    <BottomFooter/>
+      <BannerComponent />
+      <PitchCard />
+      <Hiw />
+      <Testimonial />
+      <Email />
+      <TopFooter />
+      <BottomFooter />
     </>
   );
 }

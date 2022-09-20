@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 1728px;
   position: initial;
   display: block;
   .divider {
@@ -21,9 +20,9 @@ export const Container = styled.div`
     }
   }
   @media screen and (max-width: 370px){
-    height: 1470px;
-    position: absolute;
-    top:209em;
+
+    
+    
 
   }
 `;
