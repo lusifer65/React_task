@@ -66,6 +66,18 @@ export const RightDiv = styled.div`
   width: 562px;
   height: 64px;
   margin-left: 34%;
+
+  #realtorIcon {
+    height: 32px;
+    top: 16px;
+    @media screen and (max-width: 370px){
+      width: 123.3px;
+      height: 22.59px;
+      left: 10.59px;
+      top: 11.29px;
+    }
+    
+  }
   @media screen and (max-width: 370px) {
     align-items: center;
     gap: 24px;
@@ -78,10 +90,6 @@ export const RightDiv = styled.div`
     position: relative;
     top: 8px;
     left: 30px;
-  }
-  #realtorIcon{
-    height: 32px;
-    top:16px;
   }
 `;
 

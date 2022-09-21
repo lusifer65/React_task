@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Button } from "../banner/Style";
 import {
   Container,
@@ -12,6 +12,8 @@ import {
 } from "../Email/EmailStyle";
 
 const EmailStyle = () => {
+  const options = ['Monday', 'Tuesday', 'Thursday', 
+  'Friday', 'Saturday', 'Sunday']
   return (
     <Container>
       <Box>
@@ -21,7 +23,14 @@ const EmailStyle = () => {
         </TextBox>
         <InputBox>
           <InputTab>
-            <input type="text" placeholder="Label" />
+          <input type="text" list="dataList" />
+          <datalist name="option" id="dataList">
+        {options.map((value,index)=>{
+            return (
+                <option value={value} key={index}>{value}</option>
+            )
+        })}
+        </datalist>
             <Button>Join today</Button>
           </InputTab>
           <Subtitle>
